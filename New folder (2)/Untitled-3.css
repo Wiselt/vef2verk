@@ -1,0 +1,81 @@
+.popup-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .popup-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .popup-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .popup-toggle:checked + .popup-btn + .popup-content {
+    display: block;
+  }
+  
+  .popup-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .contact-info {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info form {
+    margin-top: 20px;
+  }
+  
+  .contact-info label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info input[type="text"],
+  .contact-info input[type="email"],
+  .contact-info textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-info input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-info input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
