@@ -1,3 +1,7 @@
+*{
+  font-family: Copperplate, 'Papyrus', fantasy;
+}
+
 .panel {
     display: none;
     padding: 0 10px;
@@ -75,4 +79,44 @@
   
   .product button:hover {
     background-color: #2980b9;
+  }
+
+  .position {
+    position: absolute;
+    top: 280px;
+    right: 400px;
+  }
+
+  .position2 {
+    position: absolute;
+    top: 900px;
+    right: 400px;
+  }
+  
+  .image-container {
+    position: absolute;
+    width: 300px; 
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .second-container {
+    opacity: 0; 
+    pointer-events: none;
+  }
+  
+  .first-container:hover {
+    opacity: 0; 
+    pointer-events: none;
+  }
+  
+  .first-container:hover + .second-container {
+    opacity: 1; 
+    pointer-events: auto; 
   }

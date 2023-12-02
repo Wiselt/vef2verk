@@ -1,3 +1,7 @@
+*{
+  font-family: Copperplate, 'Papyrus', fantasy;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -75,7 +79,7 @@ main {
 }
 
 .about-section {
-  background-color: #fff;
+  background-image: repeating-conic-gradient(white, rgb(157, 157, 241) 10%, white 20%);
   padding: 30px;
   margin: 20px;
   border-radius: 5px;
@@ -87,4 +91,34 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+.image-slideshow {
+	width: 600px;
+    height: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-slideshow > div {
+	width: 600px;
+    height: 300px;
+	animation: move 9s ease-in-out 2s infinite alternate;
+    display:inline-block;
+}
+.image-slideshow > div div {
+	position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+}
+
+@keyframes move {
+  0%,25% { transform: translateX(0); }
+  30%,55% { transform: translateX(-600px); }
+  60%,85% { transform: translateX(-1200px); }
+  90%,100% { transform: translateX(-1800px); }
 }
